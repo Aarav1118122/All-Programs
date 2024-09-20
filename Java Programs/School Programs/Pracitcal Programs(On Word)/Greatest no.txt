@@ -1,0 +1,16 @@
+import java.util.*;
+public class greatest
+{
+ public static void main(String[]args)
+ {
+  Scanner sc=new Scanner(System.in);
+  int a[]=new Int[4];
+  System.out.println("Ënter 4 numbers");
+  a[0]=nextInt();
+  a[1]=nextInt();
+  a[2]=nextInt();
+  a[3]=nextInt();
+  Arrays.sort(a);
+  System.out.println("The lasrgest number"+a[3]);
+ }
+}

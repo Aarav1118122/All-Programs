@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["Project Programs", ".vscode", ""],
+    "editor.defaultFormatter": "VisualStudioExptTeam.vscodeintellicode",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

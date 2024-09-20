@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=triangle_pattern
+comment1.params=input\ loop1\ loop2
+comment1.target=int\ pattern(int,\ int,\ int)
+numComments=2

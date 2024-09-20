@@ -1,0 +1,23 @@
+import java.util.*;
+public class practicalsfibbonaci
+{
+ public static void main (String[]args)
+ {
+  Scanner sc=newScanner(System.in);
+  int a,c=1,b=0 ;
+  System.out.println("Enter the number");
+  System.out.println("1");
+  a=sc.nextInt();
+  while(1==1)
+  {
+   d=c;
+   c=c+b;
+   b=d;
+   if(c>a)
+   {
+    break;
+   }
+   System.out.printl(c);
+  }
+ }
+}

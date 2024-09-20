@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="script.js" async></script>
+</head>
+
+<body>
+	<section class="sidebar" id="sidebar">
+		<div class="default_list_container">
+			<ul class="sidebar_list default_list">
+				<li class="calendar default_list_items" onclick="calendarPageButtonClicked()"><i
+						class="fa fa-calendar"></i> Calendar</li>
+				<li class="todo default_list_items" onclick="todoPageButtonClicked()">&#9788 Todo List - <span
+						class="todo_list_items_number"></span></li>
+				<li class="important default_list_items" onclick="importantPageButtonClicked()">&#9733 Important - <span
+						class="important_list_items_number"></span></li>
+				<li class="completed default_list_items" onclick="completedPageButtonClicked()">&#10003 Completed -
+					<span class="completed_list_items_number"></span>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="informationbar">
+		<div class="information_task_name"></div>
+		<ul class="informationbar_list">
+			<li class="informationbar_list_items add_to_date" onclick="showDatePicker()">Add Task To Date</li>
+			<li class="add_due_date informationbar_list_items" onclick="showDatePicker()"> Add Due Date</li>
+			<li class="remind_me informationbar_list_items" onclick="showDatePicker()">Remind Me</li>
+			<li class="add_comment informationbar_list_items"><textarea class="add_comment_input"
+					placeholder="Add Comment"></textarea></li>
+		</ul>
+		<div class="date_picker">
+			<!-- january -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">January 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_january_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_january_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_january_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_january_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_january_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_january_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_january_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_january_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_january_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_january_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_january_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_january_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_january_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_january_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_january_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_january_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_january_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_january_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_january_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_january_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_january_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_january_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_january_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_january_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_january_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_january_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_january_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_january_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_january_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_january_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_january_2021">31</div>
+				</div>
+			</div>
+			<!-- february -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">February 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_february_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_february_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_february_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_february_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_february_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_february_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_february_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_february_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_february_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_february_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_february_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_february_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_february_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_february_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_february_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_february_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_february_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_february_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_february_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_february_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_february_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_february_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_february_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_february_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_february_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_february_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_february_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_february_2021">28</div>
+				</div>
+			</div>
+			<!-- march -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">March 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_march_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_march_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_march_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_march_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_march_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_march_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_march_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_march_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_march_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_march_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_march_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_march_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_march_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_march_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_march_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_march_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_march_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_march_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_march_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_march_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_march_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_march_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_march_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_march_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_march_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_march_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_march_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_march_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_march_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_march_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_march_2021">31</div>
+				</div>
+			</div>
+			<!-- april -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">April 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_april_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_april_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_april_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_april_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_april_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_april_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_april_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_april_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_april_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_april_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_april_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_april_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_april_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_april_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_april_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_april_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_april_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_april_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_april_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_april_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_april_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_april_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_april_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_april_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_april_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_april_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_april_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_april_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_april_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_april_2021">30</div>
+				</div>
+			</div>
+			<!-- may -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">May 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_may_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_may_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_may_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_may_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_may_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_may_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_may_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_may_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_may_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_may_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_may_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_may_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_may_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_may_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_may_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_may_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_may_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_may_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_may_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_may_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_may_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_may_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_may_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_may_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_may_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_may_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_may_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_may_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_may_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_may_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_may_2021">31</div>
+				</div>
+			</div>
+			<!-- june -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">June 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_june_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_june_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_june_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_june_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_june_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_june_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_june_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_june_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_june_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_june_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_june_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_june_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_june_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_june_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_june_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_june_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_june_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_june_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_june_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_june_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_june_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_june_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_june_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_june_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_june_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_june_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_june_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_june_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_june_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_june_2021">30</div>
+				</div>
+			</div>
+			<!-- july -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">July 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_july_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_july_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_july_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_july_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_july_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_july_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_july_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_july_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_july_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_july_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_july_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_july_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_july_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_july_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_july_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_july_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_july_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_july_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_july_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_july_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_july_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_july_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_july_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_july_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_july_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_july_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_july_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_july_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_july_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_july_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_july_2021">31</div>
+				</div>
+			</div>
+			<!-- august -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">August 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_dates dates date_picker_items" value="1_august_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_august_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_august_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_august_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_august_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_august_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_august_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_august_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_august_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_august_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_august_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_august_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_august_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_august_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_august_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_august_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_august_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_august_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_august_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_august_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_august_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_august_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_august_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_august_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_august_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_august_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_august_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_august_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_august_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_august_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_august_2021">31</div>
+				</div>
+			</div>
+			<!-- september -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">September 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_september_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_september_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_september_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_september_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_september_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_september_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_september_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_september_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_september_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_september_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_september_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_september_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_september_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_september_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_september_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_september_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_september_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_september_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_september_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_september_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_september_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_september_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_september_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_september_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_september_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_september_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_september_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_september_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_september_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_september_2021">30</div>
+				</div>
+			</div>
+			<!-- october -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">October 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_october_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_october_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_october_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_october_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_october_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_october_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_october_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_october_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_october_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_october_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_october_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_october_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_october_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_october_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_october_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_october_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_october_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_october_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_october_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_october_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_october_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_october_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_october_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_october_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_october_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_october_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_october_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_october_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_october_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_october_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_october_2021">31</div>
+				</div>
+			</div>
+			<!-- november -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">November 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_november_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_november_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_november_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_november_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_november_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_november_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_november_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_november_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_november_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_november_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_november_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_november_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_november_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_november_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_november_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_november_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_november_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_november_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_november_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_november_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_november_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_november_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_november_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_november_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_november_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_november_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_november_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_november_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_november_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_november_2021">30</div>
+				</div>
+			</div>
+			<!-- december -->
+			<div class="month date_picker_month">
+				<h2 class="month_heading date_picker_items">December 2021</h2>
+				<div class="month_date_picker">
+					<div class="date_picker_days days date_picker_items">Su</div>
+					<div class="date_picker_days days date_picker_items">Mo</div>
+					<div class="date_picker_days days date_picker_items">Tu</div>
+					<div class="date_picker_days days date_picker_items">We</div>
+					<div class="date_picker_days days date_picker_items">Th</div>
+					<div class="date_picker_days days date_picker_items">Fr</div>
+					<div class="date_picker_days days date_picker_items">Sa</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="date_picker_dates dates date_picker_items" value="1_december_2021">1</div>
+					<div class="date_picker_dates dates date_picker_items" value="2_december_2021">2</div>
+					<div class="date_picker_dates dates date_picker_items" value="3_december_2021">3</div>
+					<div class="date_picker_dates dates date_picker_items" value="4_december_2021">4</div>
+					<div class="date_picker_dates dates date_picker_items" value="5_december_2021">5</div>
+					<div class="date_picker_dates dates date_picker_items" value="6_december_2021">6</div>
+					<div class="date_picker_dates dates date_picker_items" value="7_december_2021">7</div>
+					<div class="date_picker_dates dates date_picker_items" value="8_december_2021">8</div>
+					<div class="date_picker_dates dates date_picker_items" value="9_december_2021">9</div>
+					<div class="date_picker_dates dates date_picker_items" value="10_december_2021">10</div>
+					<div class="date_picker_dates dates date_picker_items" value="11_december_2021">11</div>
+					<div class="date_picker_dates dates date_picker_items" value="12_december_2021">12</div>
+					<div class="date_picker_dates dates date_picker_items" value="13_december_2021">13</div>
+					<div class="date_picker_dates dates date_picker_items" value="14_december_2021">14</div>
+					<div class="date_picker_dates dates date_picker_items" value="15_december_2021">15</div>
+					<div class="date_picker_dates dates date_picker_items" value="16_december_2021">16</div>
+					<div class="date_picker_dates dates date_picker_items" value="17_december_2021">17</div>
+					<div class="date_picker_dates dates date_picker_items" value="18_december_2021">18</div>
+					<div class="date_picker_dates dates date_picker_items" value="19_december_2021">19</div>
+					<div class="date_picker_dates dates date_picker_items" value="20_december_2021">20</div>
+					<div class="date_picker_dates dates date_picker_items" value="21_december_2021">21</div>
+					<div class="date_picker_dates dates date_picker_items" value="22_december_2021">22</div>
+					<div class="date_picker_dates dates date_picker_items" value="23_december_2021">23</div>
+					<div class="date_picker_dates dates date_picker_items" value="24_december_2021">24</div>
+					<div class="date_picker_dates dates date_picker_items" value="25_december_2021">25</div>
+					<div class="date_picker_dates dates date_picker_items" value="26_december_2021">26</div>
+					<div class="date_picker_dates dates date_picker_items" value="27_december_2021">27</div>
+					<div class="date_picker_dates dates date_picker_items" value="28_december_2021">28</div>
+					<div class="date_picker_dates dates date_picker_items" value="29_december_2021">29</div>
+					<div class="date_picker_dates dates date_picker_items" value="30_december_2021">30</div>
+					<div class="date_picker_dates dates date_picker_items" value="31_december_2021">31</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main class="main">
+		<section class="calendar_page main_page">
+			<div class="page_header calendar_page_header">
+				<h1 class="page_title calendar_page_title"><i class="fa fa-calendar"></i> Calendar</h1>
+			</div>
+			<div class="year_calendar">
+				<!-- january -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">January 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_january_2021">1</div>
+						<div class="dates year_calendar_items" value="2_january_2021">2</div>
+						<div class="dates year_calendar_items" value="3_january_2021">3</div>
+						<div class="dates year_calendar_items" value="4_january_2021">4</div>
+						<div class="dates year_calendar_items" value="5_january_2021">5</div>
+						<div class="dates year_calendar_items" value="6_january_2021">6</div>
+						<div class="dates year_calendar_items" value="7_january_2021">7</div>
+						<div class="dates year_calendar_items" value="8_january_2021">8</div>
+						<div class="dates year_calendar_items" value="9_january_2021">9</div>
+						<div class="dates year_calendar_items" value="10_january_2021">10</div>
+						<div class="dates year_calendar_items" value="11_january_2021">11</div>
+						<div class="dates year_calendar_items" value="12_january_2021">12</div>
+						<div class="dates year_calendar_items" value="13_january_2021">13</div>
+						<div class="dates year_calendar_items" value="14_january_2021">14</div>
+						<div class="dates year_calendar_items" value="15_january_2021">15</div>
+						<div class="dates year_calendar_items" value="16_january_2021">16</div>
+						<div class="dates year_calendar_items" value="17_january_2021">17</div>
+						<div class="dates year_calendar_items" value="18_january_2021">18</div>
+						<div class="dates year_calendar_items" value="19_january_2021">19</div>
+						<div class="dates year_calendar_items" value="20_january_2021">20</div>
+						<div class="dates year_calendar_items" value="21_january_2021">21</div>
+						<div class="dates year_calendar_items" value="22_january_2021">22</div>
+						<div class="dates year_calendar_items" value="23_january_2021">23</div>
+						<div class="dates year_calendar_items" value="24_january_2021">24</div>
+						<div class="dates year_calendar_items" value="25_january_2021">25</div>
+						<div class="dates year_calendar_items" value="26_january_2021">26</div>
+						<div class="dates year_calendar_items" value="27_january_2021">27</div>
+						<div class="dates year_calendar_items" value="28_january_2021">28</div>
+						<div class="dates year_calendar_items" value="29_january_2021">29</div>
+						<div class="dates year_calendar_items" value="30_january_2021">30</div>
+						<div class="dates year_calendar_items" value="31_january_2021">31</div>
+					</div>
+				</div>
+				<!-- february -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">February 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_february_2021">1</div>
+						<div class="dates year_calendar_items" value="2_february_2021">2</div>
+						<div class="dates year_calendar_items" value="3_february_2021">3</div>
+						<div class="dates year_calendar_items" value="4_february_2021">4</div>
+						<div class="dates year_calendar_items" value="5_february_2021">5</div>
+						<div class="dates year_calendar_items" value="6_february_2021">6</div>
+						<div class="dates year_calendar_items" value="7_february_2021">7</div>
+						<div class="dates year_calendar_items" value="8_february_2021">8</div>
+						<div class="dates year_calendar_items" value="9_february_2021">9</div>
+						<div class="dates year_calendar_items" value="10_february_2021">10</div>
+						<div class="dates year_calendar_items" value="11_february_2021">11</div>
+						<div class="dates year_calendar_items" value="12_february_2021">12</div>
+						<div class="dates year_calendar_items" value="13_february_2021">13</div>
+						<div class="dates year_calendar_items" value="14_february_2021">14</div>
+						<div class="dates year_calendar_items" value="15_february_2021">15</div>
+						<div class="dates year_calendar_items" value="16_february_2021">16</div>
+						<div class="dates year_calendar_items" value="17_february_2021">17</div>
+						<div class="dates year_calendar_items" value="18_february_2021">18</div>
+						<div class="dates year_calendar_items" value="19_february_2021">19</div>
+						<div class="dates year_calendar_items" value="20_february_2021">20</div>
+						<div class="dates year_calendar_items" value="21_february_2021">21</div>
+						<div class="dates year_calendar_items" value="22_february_2021">22</div>
+						<div class="dates year_calendar_items" value="23_february_2021">23</div>
+						<div class="dates year_calendar_items" value="24_february_2021">24</div>
+						<div class="dates year_calendar_items" value="25_february_2021">25</div>
+						<div class="dates year_calendar_items" value="26_february_2021">26</div>
+						<div class="dates year_calendar_items" value="27_february_2021">27</div>
+						<div class="dates year_calendar_items" value="28_february_2021">28</div>
+					</div>
+				</div>
+				<!-- march -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">March 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_march_2021">1</div>
+						<div class="dates year_calendar_items" value="2_march_2021">2</div>
+						<div class="dates year_calendar_items" value="3_march_2021">3</div>
+						<div class="dates year_calendar_items" value="4_march_2021">4</div>
+						<div class="dates year_calendar_items" value="5_march_2021">5</div>
+						<div class="dates year_calendar_items" value="6_march_2021">6</div>
+						<div class="dates year_calendar_items" value="7_march_2021">7</div>
+						<div class="dates year_calendar_items" value="8_march_2021">8</div>
+						<div class="dates year_calendar_items" value="9_march_2021">9</div>
+						<div class="dates year_calendar_items" value="10_march_2021">10</div>
+						<div class="dates year_calendar_items" value="11_march_2021">11</div>
+						<div class="dates year_calendar_items" value="12_march_2021">12</div>
+						<div class="dates year_calendar_items" value="13_march_2021">13</div>
+						<div class="dates year_calendar_items" value="14_march_2021">14</div>
+						<div class="dates year_calendar_items" value="15_march_2021">15</div>
+						<div class="dates year_calendar_items" value="16_march_2021">16</div>
+						<div class="dates year_calendar_items" value="17_march_2021">17</div>
+						<div class="dates year_calendar_items" value="18_march_2021">18</div>
+						<div class="dates year_calendar_items" value="19_march_2021">19</div>
+						<div class="dates year_calendar_items" value="20_march_2021">20</div>
+						<div class="dates year_calendar_items" value="21_march_2021">21</div>
+						<div class="dates year_calendar_items" value="22_march_2021">22</div>
+						<div class="dates year_calendar_items" value="23_march_2021">23</div>
+						<div class="dates year_calendar_items" value="24_march_2021">24</div>
+						<div class="dates year_calendar_items" value="25_march_2021">25</div>
+						<div class="dates year_calendar_items" value="26_march_2021">26</div>
+						<div class="dates year_calendar_items" value="27_march_2021">27</div>
+						<div class="dates year_calendar_items" value="28_march_2021">28</div>
+						<div class="dates year_calendar_items" value="29_march_2021">29</div>
+						<div class="dates year_calendar_items" value="30_march_2021">30</div>
+						<div class="dates year_calendar_items" value="31_march_2021">31</div>
+					</div>
+				</div>
+				<!-- april -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">April 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_april_2021">1</div>
+						<div class="dates year_calendar_items" value="2_april_2021">2</div>
+						<div class="dates year_calendar_items" value="3_april_2021">3</div>
+						<div class="dates year_calendar_items" value="4_april_2021">4</div>
+						<div class="dates year_calendar_items" value="5_april_2021">5</div>
+						<div class="dates year_calendar_items" value="6_april_2021">6</div>
+						<div class="dates year_calendar_items" value="7_april_2021">7</div>
+						<div class="dates year_calendar_items" value="8_april_2021">8</div>
+						<div class="dates year_calendar_items" value="9_april_2021">9</div>
+						<div class="dates year_calendar_items" value="10_april_2021">10</div>
+						<div class="dates year_calendar_items" value="11_april_2021">11</div>
+						<div class="dates year_calendar_items" value="12_april_2021">12</div>
+						<div class="dates year_calendar_items" value="13_april_2021">13</div>
+						<div class="dates year_calendar_items" value="14_april_2021">14</div>
+						<div class="dates year_calendar_items" value="15_april_2021">15</div>
+						<div class="dates year_calendar_items" value="16_april_2021">16</div>
+						<div class="dates year_calendar_items" value="17_april_2021">17</div>
+						<div class="dates year_calendar_items" value="18_april_2021">18</div>
+						<div class="dates year_calendar_items" value="19_april_2021">19</div>
+						<div class="dates year_calendar_items" value="20_april_2021">20</div>
+						<div class="dates year_calendar_items" value="21_april_2021">21</div>
+						<div class="dates year_calendar_items" value="22_april_2021">22</div>
+						<div class="dates year_calendar_items" value="23_april_2021">23</div>
+						<div class="dates year_calendar_items" value="24_april_2021">24</div>
+						<div class="dates year_calendar_items" value="25_april_2021">25</div>
+						<div class="dates year_calendar_items" value="26_april_2021">26</div>
+						<div class="dates year_calendar_items" value="27_april_2021">27</div>
+						<div class="dates year_calendar_items" value="28_april_2021">28</div>
+						<div class="dates year_calendar_items" value="29_april_2021">29</div>
+						<div class="dates year_calendar_items" value="30_april_2021">30</div>
+					</div>
+				</div>
+				<!-- may -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">May 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_may_2021">1</div>
+						<div class="dates year_calendar_items" value="2_may_2021">2</div>
+						<div class="dates year_calendar_items" value="3_may_2021">3</div>
+						<div class="dates year_calendar_items" value="4_may_2021">4</div>
+						<div class="dates year_calendar_items" value="5_may_2021">5</div>
+						<div class="dates year_calendar_items" value="6_may_2021">6</div>
+						<div class="dates year_calendar_items" value="7_may_2021">7</div>
+						<div class="dates year_calendar_items" value="8_may_2021">8</div>
+						<div class="dates year_calendar_items" value="9_may_2021">9</div>
+						<div class="dates year_calendar_items" value="10_may_2021">10</div>
+						<div class="dates year_calendar_items" value="11_may_2021">11</div>
+						<div class="dates year_calendar_items" value="12_may_2021">12</div>
+						<div class="dates year_calendar_items" value="13_may_2021">13</div>
+						<div class="dates year_calendar_items" value="14_may_2021">14</div>
+						<div class="dates year_calendar_items" value="15_may_2021">15</div>
+						<div class="dates year_calendar_items" value="16_may_2021">16</div>
+						<div class="dates year_calendar_items" value="17_may_2021">17</div>
+						<div class="dates year_calendar_items" value="18_may_2021">18</div>
+						<div class="dates year_calendar_items" value="19_may_2021">19</div>
+						<div class="dates year_calendar_items" value="20_may_2021">20</div>
+						<div class="dates year_calendar_items" value="21_may_2021">21</div>
+						<div class="dates year_calendar_items" value="22_may_2021">22</div>
+						<div class="dates year_calendar_items" value="23_may_2021">23</div>
+						<div class="dates year_calendar_items" value="24_may_2021">24</div>
+						<div class="dates year_calendar_items" value="25_may_2021">25</div>
+						<div class="dates year_calendar_items" value="26_may_2021">26</div>
+						<div class="dates year_calendar_items" value="27_may_2021">27</div>
+						<div class="dates year_calendar_items" value="28_may_2021">28</div>
+						<div class="dates year_calendar_items" value="29_may_2021">29</div>
+						<div class="dates year_calendar_items" value="30_may_2021">30</div>
+						<div class="dates year_calendar_items" value="31_may_2021">31</div>
+					</div>
+				</div>
+				<!-- june -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">June 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_june_2021">1</div>
+						<div class="dates year_calendar_items" value="2_june_2021">2</div>
+						<div class="dates year_calendar_items" value="3_june_2021">3</div>
+						<div class="dates year_calendar_items" value="4_june_2021">4</div>
+						<div class="dates year_calendar_items" value="5_june_2021">5</div>
+						<div class="dates year_calendar_items" value="6_june_2021">6</div>
+						<div class="dates year_calendar_items" value="7_june_2021">7</div>
+						<div class="dates year_calendar_items" value="8_june_2021">8</div>
+						<div class="dates year_calendar_items" value="9_june_2021">9</div>
+						<div class="dates year_calendar_items" value="10_june_2021">10</div>
+						<div class="dates year_calendar_items" value="11_june_2021">11</div>
+						<div class="dates year_calendar_items" value="12_june_2021">12</div>
+						<div class="dates year_calendar_items" value="13_june_2021">13</div>
+						<div class="dates year_calendar_items" value="14_june_2021">14</div>
+						<div class="dates year_calendar_items" value="15_june_2021">15</div>
+						<div class="dates year_calendar_items" value="16_june_2021">16</div>
+						<div class="dates year_calendar_items" value="17_june_2021">17</div>
+						<div class="dates year_calendar_items" value="18_june_2021">18</div>
+						<div class="dates year_calendar_items" value="19_june_2021">19</div>
+						<div class="dates year_calendar_items" value="20_june_2021">20</div>
+						<div class="dates year_calendar_items" value="21_june_2021">21</div>
+						<div class="dates year_calendar_items" value="22_june_2021">22</div>
+						<div class="dates year_calendar_items" value="23_june_2021">23</div>
+						<div class="dates year_calendar_items" value="24_june_2021">24</div>
+						<div class="dates year_calendar_items" value="25_june_2021">25</div>
+						<div class="dates year_calendar_items" value="26_june_2021">26</div>
+						<div class="dates year_calendar_items" value="27_june_2021">27</div>
+						<div class="dates year_calendar_items" value="28_june_2021">28</div>
+						<div class="dates year_calendar_items" value="29_june_2021">29</div>
+						<div class="dates year_calendar_items" value="30_june_2021">30</div>
+					</div>
+				</div>
+				<!-- july -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">July 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_july_2021">1</div>
+						<div class="dates year_calendar_items" value="2_july_2021">2</div>
+						<div class="dates year_calendar_items" value="3_july_2021">3</div>
+						<div class="dates year_calendar_items" value="4_july_2021">4</div>
+						<div class="dates year_calendar_items" value="5_july_2021">5</div>
+						<div class="dates year_calendar_items" value="6_july_2021">6</div>
+						<div class="dates year_calendar_items" value="7_july_2021">7</div>
+						<div class="dates year_calendar_items" value="8_july_2021">8</div>
+						<div class="dates year_calendar_items" value="9_july_2021">9</div>
+						<div class="dates year_calendar_items" value="10_july_2021">10</div>
+						<div class="dates year_calendar_items" value="11_july_2021">11</div>
+						<div class="dates year_calendar_items" value="12_july_2021">12</div>
+						<div class="dates year_calendar_items" value="13_july_2021">13</div>
+						<div class="dates year_calendar_items" value="14_july_2021">14</div>
+						<div class="dates year_calendar_items" value="15_july_2021">15</div>
+						<div class="dates year_calendar_items" value="16_july_2021">16</div>
+						<div class="dates year_calendar_items" value="17_july_2021">17</div>
+						<div class="dates year_calendar_items" value="18_july_2021">18</div>
+						<div class="dates year_calendar_items" value="19_july_2021">19</div>
+						<div class="dates year_calendar_items" value="20_july_2021">20</div>
+						<div class="dates year_calendar_items" value="21_july_2021">21</div>
+						<div class="dates year_calendar_items" value="22_july_2021">22</div>
+						<div class="dates year_calendar_items" value="23_july_2021">23</div>
+						<div class="dates year_calendar_items" value="24_july_2021">24</div>
+						<div class="dates year_calendar_items" value="25_july_2021">25</div>
+						<div class="dates year_calendar_items" value="26_july_2021">26</div>
+						<div class="dates year_calendar_items" value="27_july_2021">27</div>
+						<div class="dates year_calendar_items" value="28_july_2021">28</div>
+						<div class="dates year_calendar_items" value="29_july_2021">29</div>
+						<div class="dates year_calendar_items" value="30_july_2021">30</div>
+						<div class="dates year_calendar_items" value="31_july_2021">31</div>
+					</div>
+				</div>
+				<!-- august -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">August 2021</h2>
+					<div class="month_calender">
+						<div class="dates year_calendar_items" value="1_august_2021">1</div>
+						<div class="dates year_calendar_items" value="2_august_2021">2</div>
+						<div class="dates year_calendar_items" value="3_august_2021">3</div>
+						<div class="dates year_calendar_items" value="4_august_2021">4</div>
+						<div class="dates year_calendar_items" value="5_august_2021">5</div>
+						<div class="dates year_calendar_items" value="6_august_2021">6</div>
+						<div class="dates year_calendar_items" value="7_august_2021">7</div>
+						<div class="dates year_calendar_items" value="8_august_2021">8</div>
+						<div class="dates year_calendar_items" value="9_august_2021">9</div>
+						<div class="dates year_calendar_items" value="10_august_2021">10</div>
+						<div class="dates year_calendar_items" value="11_august_2021">11</div>
+						<div class="dates year_calendar_items" value="12_august_2021">12</div>
+						<div class="dates year_calendar_items" value="13_august_2021">13</div>
+						<div class="dates year_calendar_items" value="14_august_2021">14</div>
+						<div class="dates year_calendar_items" value="15_august_2021">15</div>
+						<div class="dates year_calendar_items" value="16_august_2021">16</div>
+						<div class="dates year_calendar_items" value="17_august_2021">17</div>
+						<div class="dates year_calendar_items" value="18_august_2021">18</div>
+						<div class="dates year_calendar_items" value="19_august_2021">19</div>
+						<div class="dates year_calendar_items" value="20_august_2021">20</div>
+						<div class="dates year_calendar_items" value="21_august_2021">21</div>
+						<div class="dates year_calendar_items" value="22_august_2021">22</div>
+						<div class="dates year_calendar_items" value="23_august_2021">23</div>
+						<div class="dates year_calendar_items" value="24_august_2021">24</div>
+						<div class="dates year_calendar_items" value="25_august_2021">25</div>
+						<div class="dates year_calendar_items" value="26_august_2021">26</div>
+						<div class="dates year_calendar_items" value="27_august_2021">27</div>
+						<div class="dates year_calendar_items" value="28_august_2021">28</div>
+						<div class="dates year_calendar_items" value="29_august_2021">29</div>
+						<div class="dates year_calendar_items" value="30_august_2021">30</div>
+						<div class="dates year_calendar_items" value="31_august_2021">31</div>
+					</div>
+				</div>
+				<!-- september -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">September 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_september_2021">1</div>
+						<div class="dates year_calendar_items" value="2_september_2021">2</div>
+						<div class="dates year_calendar_items" value="3_september_2021">3</div>
+						<div class="dates year_calendar_items" value="4_september_2021">4</div>
+						<div class="dates year_calendar_items" value="5_september_2021">5</div>
+						<div class="dates year_calendar_items" value="6_september_2021">6</div>
+						<div class="dates year_calendar_items" value="7_september_2021">7</div>
+						<div class="dates year_calendar_items" value="8_september_2021">8</div>
+						<div class="dates year_calendar_items" value="9_september_2021">9</div>
+						<div class="dates year_calendar_items" value="10_september_2021">10</div>
+						<div class="dates year_calendar_items" value="11_september_2021">11</div>
+						<div class="dates year_calendar_items" value="12_september_2021">12</div>
+						<div class="dates year_calendar_items" value="13_september_2021">13</div>
+						<div class="dates year_calendar_items" value="14_september_2021">14</div>
+						<div class="dates year_calendar_items" value="15_september_2021">15</div>
+						<div class="dates year_calendar_items" value="16_september_2021">16</div>
+						<div class="dates year_calendar_items" value="17_september_2021">17</div>
+						<div class="dates year_calendar_items" value="18_september_2021">18</div>
+						<div class="dates year_calendar_items" value="19_september_2021">19</div>
+						<div class="dates year_calendar_items" value="20_september_2021">20</div>
+						<div class="dates year_calendar_items" value="21_september_2021">21</div>
+						<div class="dates year_calendar_items" value="22_september_2021">22</div>
+						<div class="dates year_calendar_items" value="23_september_2021">23</div>
+						<div class="dates year_calendar_items" value="24_september_2021">24</div>
+						<div class="dates year_calendar_items" value="25_september_2021">25</div>
+						<div class="dates year_calendar_items" value="26_september_2021">26</div>
+						<div class="dates year_calendar_items" value="27_september_2021">27</div>
+						<div class="dates year_calendar_items" value="28_september_2021">28</div>
+						<div class="dates year_calendar_items" value="29_september_2021">29</div>
+						<div class="dates year_calendar_items" value="30_september_2021">30</div>
+					</div>
+				</div>
+				<!-- october -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">October 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_october_2021">1</div>
+						<div class="dates year_calendar_items" value="2_october_2021">2</div>
+						<div class="dates year_calendar_items" value="3_october_2021">3</div>
+						<div class="dates year_calendar_items" value="4_october_2021">4</div>
+						<div class="dates year_calendar_items" value="5_october_2021">5</div>
+						<div class="dates year_calendar_items" value="6_october_2021">6</div>
+						<div class="dates year_calendar_items" value="7_october_2021">7</div>
+						<div class="dates year_calendar_items" value="8_october_2021">8</div>
+						<div class="dates year_calendar_items" value="9_october_2021">9</div>
+						<div class="dates year_calendar_items" value="10_october_2021">10</div>
+						<div class="dates year_calendar_items" value="11_october_2021">11</div>
+						<div class="dates year_calendar_items" value="12_october_2021">12</div>
+						<div class="dates year_calendar_items" value="13_october_2021">13</div>
+						<div class="dates year_calendar_items" value="14_october_2021">14</div>
+						<div class="dates year_calendar_items" value="15_october_2021">15</div>
+						<div class="dates year_calendar_items" value="16_october_2021">16</div>
+						<div class="dates year_calendar_items" value="17_october_2021">17</div>
+						<div class="dates year_calendar_items" value="18_october_2021">18</div>
+						<div class="dates year_calendar_items" value="19_october_2021">19</div>
+						<div class="dates year_calendar_items" value="20_october_2021">20</div>
+						<div class="dates year_calendar_items" value="21_october_2021">21</div>
+						<div class="dates year_calendar_items" value="22_october_2021">22</div>
+						<div class="dates year_calendar_items" value="23_october_2021">23</div>
+						<div class="dates year_calendar_items" value="24_october_2021">24</div>
+						<div class="dates year_calendar_items" value="25_october_2021">25</div>
+						<div class="dates year_calendar_items" value="26_october_2021">26</div>
+						<div class="dates year_calendar_items" value="27_october_2021">27</div>
+						<div class="dates year_calendar_items" value="28_october_2021">28</div>
+						<div class="dates year_calendar_items" value="29_october_2021">29</div>
+						<div class="dates year_calendar_items" value="30_october_2021">30</div>
+						<div class="dates year_calendar_items" value="31_october_2021">31</div>
+					</div>
+				</div>
+				<!-- november -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">November 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_november_2021">1</div>
+						<div class="dates year_calendar_items" value="2_november_2021">2</div>
+						<div class="dates year_calendar_items" value="3_november_2021">3</div>
+						<div class="dates year_calendar_items" value="4_november_2021">4</div>
+						<div class="dates year_calendar_items" value="5_november_2021">5</div>
+						<div class="dates year_calendar_items" value="6_november_2021">6</div>
+						<div class="dates year_calendar_items" value="7_november_2021">7</div>
+						<div class="dates year_calendar_items" value="8_november_2021">8</div>
+						<div class="dates year_calendar_items" value="9_november_2021">9</div>
+						<div class="dates year_calendar_items" value="10_november_2021">10</div>
+						<div class="dates year_calendar_items" value="11_november_2021">11</div>
+						<div class="dates year_calendar_items" value="12_november_2021">12</div>
+						<div class="dates year_calendar_items" value="13_november_2021">13</div>
+						<div class="dates year_calendar_items" value="14_november_2021">14</div>
+						<div class="dates year_calendar_items" value="15_november_2021">15</div>
+						<div class="dates year_calendar_items" value="16_november_2021">16</div>
+						<div class="dates year_calendar_items" value="17_november_2021">17</div>
+						<div class="dates year_calendar_items" value="18_november_2021">18</div>
+						<div class="dates year_calendar_items" value="19_november_2021">19</div>
+						<div class="dates year_calendar_items" value="20_november_2021">20</div>
+						<div class="dates year_calendar_items" value="21_november_2021">21</div>
+						<div class="dates year_calendar_items" value="22_november_2021">22</div>
+						<div class="dates year_calendar_items" value="23_november_2021">23</div>
+						<div class="dates year_calendar_items" value="24_november_2021">24</div>
+						<div class="dates year_calendar_items" value="25_november_2021">25</div>
+						<div class="dates year_calendar_items" value="26_november_2021">26</div>
+						<div class="dates year_calendar_items" value="27_november_2021">27</div>
+						<div class="dates year_calendar_items" value="28_november_2021">28</div>
+						<div class="dates year_calendar_items" value="29_november_2021">29</div>
+						<div class="dates year_calendar_items" value="30_november_2021">30</div>
+					</div>
+				</div>
+				<!-- december -->
+				<div class="month">
+					<h2 class="month_heading year_calendar_items">December 2021</h2>
+					<div class="month_calender">
+						<div class="days year_calendar_items">Su</div>
+						<div class="days year_calendar_items">Mo</div>
+						<div class="days year_calendar_items">Tu</div>
+						<div class="days year_calendar_items">We</div>
+						<div class="days year_calendar_items">Th</div>
+						<div class="days year_calendar_items">Fr</div>
+						<div class="days year_calendar_items">Sa</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div class="dates year_calendar_items" value="1_december_2021">1</div>
+						<div class="dates year_calendar_items" value="2_december_2021">2</div>
+						<div class="dates year_calendar_items" value="3_december_2021">3</div>
+						<div class="dates year_calendar_items" value="4_december_2021">4</div>
+						<div class="dates year_calendar_items" value="5_december_2021">5</div>
+						<div class="dates year_calendar_items" value="6_december_2021">6</div>
+						<div class="dates year_calendar_items" value="7_december_2021">7</div>
+						<div class="dates year_calendar_items" value="8_december_2021">8</div>
+						<div class="dates year_calendar_items" value="9_december_2021">9</div>
+						<div class="dates year_calendar_items" value="10_december_2021">10</div>
+						<div class="dates year_calendar_items" value="11_december_2021">11</div>
+						<div class="dates year_calendar_items" value="12_december_2021">12</div>
+						<div class="dates year_calendar_items" value="13_december_2021">13</div>
+						<div class="dates year_calendar_items" value="14_december_2021">14</div>
+						<div class="dates year_calendar_items" value="15_december_2021">15</div>
+						<div class="dates year_calendar_items" value="16_december_2021">16</div>
+						<div class="dates year_calendar_items" value="17_december_2021">17</div>
+						<div class="dates year_calendar_items" value="18_december_2021">18</div>
+						<div class="dates year_calendar_items" value="19_december_2021">19</div>
+						<div class="dates year_calendar_items" value="20_december_2021">20</div>
+						<div class="dates year_calendar_items" value="21_december_2021">21</div>
+						<div class="dates year_calendar_items" value="22_december_2021">22</div>
+						<div class="dates year_calendar_items" value="23_december_2021">23</div>
+						<div class="dates year_calendar_items" value="24_december_2021">24</div>
+						<div class="dates year_calendar_items" value="25_december_2021">25</div>
+						<div class="dates year_calendar_items" value="26_december_2021">26</div>
+						<div class="dates year_calendar_items" value="27_december_2021">27</div>
+						<div class="dates year_calendar_items" value="28_december_2021">28</div>
+						<div class="dates year_calendar_items" value="29_december_2021">29</div>
+						<div class="dates year_calendar_items" value="30_december_2021">30</div>
+						<div class="dates year_calendar_items" value="31_december_2021">31</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="todo_page main_page">
+			<div class="page_header todo_page_header">
+				<div>
+					<h1 class="page_title todo_page_title">&#9788 Todo List</h1>
+					<p class="todo_page_date"></p>
+				</div>
+				<button class="delete_list_items_button" onclick="deleteListItemsButtonClicked()"><i
+						class="fa fa-trash-o" onclick="deleteListItemsButtonClicked()"></i></button>
+			</div>
+			<ul class="todo_todo_list todo_list"></ul>
+			<div class="task_input_bar">
+				<input type="text" class="task_input" placeholder="Enter Task" onkeypress="enterKeyPressed()">
+				<button class="task_input_button" onclick="taskInputButtonClicked()">+</button>
+			</div>
+			<div class="todo_list_items_template">
+				<li class="todo_list_items">
+					<button class="complete_button_off" id="complete_button"
+						onclick="completeButtonClicked()">&#10004</button>
+					<input type="text" class="task_name">
+					<button class="important_button_off" id="important_button"
+						onclick="importantButtonClicked()">&#9733</button>
+					<button class="delete_button" id="delete_button" onclick="deleteButtonClicked()"><i
+							class="fa fa-trash-o" onclick="deleteButtonClicked()"></i></button>
+					<button class="more_button" onclick="more_button_clicked()">&#9002</button>
+				</li>
+			</div>
+		</section>
+		<section class="important_page main_page">
+			<div class="page_header important_page_header">
+				<h1 class="page_title">&#9733 Important</h1>
+			</div>
+			<ul class="important_list todo_list"></ul>
+		</section>
+		<section class="completed_page main_page">
+			<div class="page_header completed_page_header">
+				<h1 class="page_title">&#10003 Completed</h1>
+			</div>
+			<ul class="completed_list todo_list"></ul>
+		</section>
+	</main>
+</body>
+
+</html>
