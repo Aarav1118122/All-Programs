@@ -1,0 +1,75 @@
+html
+
+<fieldset className="toggle">
+	<div className="toggle__container">
+	  <-- This is the radio button for the light mode -->
+          <input type="radio" name="theme" id="light" checked /> 
+	  <-- This is the radio button for the dark mode -->
+          <input type="radio" name="theme" id="dark" />
+	  <-- This is the background for the switch-->
+          <span className="toggle__background"></span>
+	  <-- This is the circular button for the toggle switch-->
+          <span className="toggle__button"></span>
+        </div>
+</fieldset>
+
+
+css
+
+
+.toggle {
+    display: flex;
+    align-items: center;
+    border: none;
+    &__container {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+      width: toRem(44);
+      height: toRem(22);
+    }
+    input[type="radio"] { // This is for the buttons which are to be hidden under the background
+      margin: 0;
+      width: toRem(22);
+      height: toRem(22);
+    }
+    &__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: toRem(11);
+      background: #c4c4c4;
+      pointer-events: none;
+    }
+    &__button {
+      position: absolute;
+      margin: 0;
+      width: toRem(16.13);
+      height: toRem(16.13);
+      border-radius: toRem(11);
+      top: toRem(3);
+      bottom: toRem(3);
+      right: 0;
+      left: toRem(3);
+      background: white;
+      transition: all 200ms ease-in-out;
+    }
+    #light:checked ~ .toggle__button { // This is to see if the light mode is enabled
+      right: calc(100% - 20px);
+      left: 4px;
+    }
+    #dark:checked ~ .toggle__button { // This is to see if the dark mode is enabled
+      left: calc(100% - 20px);
+      right: 4px;
+    }
+  }
+
+
+
+
+To add the labels use "display: grid" in the ".toggle" container and add labels for the radio buttons in the ".toggle" outside the ".toggle__container" and add the labels and the the ".toggle_container" in different columns.
